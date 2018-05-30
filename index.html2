@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<h1 align="center"><ins><big><del>Калькулятор</del></big></ins></h1>
+<input align="center" id="name" type="text">
+<table>
+    <tr>
+        <td><input type="button" value="7" onClick="document.calculator.ans.value+='7'"></td>
+        <td><input type="button" value="8" onClick="document.calculator.ans.value+='8'"></td>
+        <td><input type="button" value="9" onClick="document.calculator.ans.value+='9'"></td>
+        <td><input type="button" value="*" onClick="document.calculator.ans.value+='*'"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="4" onClick="document.calculator.ans.value+='4'"></td>
+        <td><input type="button" value="5" onClick="document.calculator.ans.value+='5'"></td>
+        <td><input type="button" value="6" onClick="document.calculator.ans.value+='6'"></td>
+        <td><input type="button" value="-" onClick="document.calculator.ans.value+='-'"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="1" onClick="document.calculator.ans.value+='1'"></td>
+       <td><input type="button" value="2" onClick="document.calculator.ans.value+='2'"></td>
+        <td><input type="button" value="3" onClick="document.calculator.ans.value+='3'"></td>
+        <td><input type="button" value="+" onClick="document.calculator.ans.value+='+'"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="<-" onClick="document.calculator.ans.value+='<-'"></td>
+        <td><input type="button" value="0" onClick="document.calculator.ans.value+='0'"></td>
+        <td><input type="button" value="," onClick="document.calculator.ans.value+=','"></td>
+        <td><input type="button" value="=" onClick="document.calculator.ans.value+='='"></td>
+    </tr>
+
+</table>
+</body>
+</html>
