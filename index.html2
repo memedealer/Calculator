@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript" src="index.js2.js"></script>
     <meta charset="UTF-8">
     <title>Calculator</title>
 </head>
 <body>
 <h1 align="center"><ins><big><del>Калькулятор</del></big></ins></h1>
-<input align="center" id="name" type="text">
-<table>
+<form>...................................................................................................................................................................................................................
+<input align="center" id="name" type="text">................................................................................................................................................................................................................
+</form>
+<table align="center">
     <tr>
         <td><input type="button" value="7" onClick="document.calculator.ans.value+='7'"></td>
         <td><input type="button" value="8" onClick="document.calculator.ans.value+='8'"></td>
@@ -32,7 +35,6 @@
         <td><input type="button" value="," onClick="document.calculator.ans.value+=','"></td>
         <td><input type="button" value="=" onClick="document.calculator.ans.value+='='"></td>
     </tr>
-
 </table>
 </body>
 </html>
