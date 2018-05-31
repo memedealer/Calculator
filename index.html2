@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="text/javascript" src="index.js2.js"></script>
+
     <meta charset="UTF-8">
     <title>Calculator</title>
 </head>
 <body>
 <h1 align="center"><ins><big><del>Калькулятор</del></big></ins></h1>
-<form>...................................................................................................................................................................................................................
-<input align="center" id="name" type="text">................................................................................................................................................................................................................
+<form>.......................................................................................................................................................................................................................
+    <input align="center" id="field" type="text">................................................................................................................................................................................................................
 </form>
 <table align="center">
     <tr>
-        <td><input type="button" value="7" onClick="document.calculator.ans.value+='7'"></td>
-        <td><input type="button" value="8" onClick="document.calculator.ans.value+='8'"></td>
-        <td><input type="button" value="9" onClick="document.calculator.ans.value+='9'"></td>
-        <td><input type="button" value="*" onClick="document.calculator.ans.value+='*'"></td>
+        <td><button class = "numbers">7</button></td>
+        <td><button class = "numbers">8</button></td>
+        <td><button class = "numbers">9</button></td>
+        <td><button class = "operations">*</button></td>
     </tr>
     <tr>
-        <td><input type="button" value="4" onClick="document.calculator.ans.value+='4'"></td>
-        <td><input type="button" value="5" onClick="document.calculator.ans.value+='5'"></td>
-        <td><input type="button" value="6" onClick="document.calculator.ans.value+='6'"></td>
-        <td><input type="button" value="-" onClick="document.calculator.ans.value+='-'"></td>
+        <td><button class = "numbers">4</button></td>
+        <td><button class = "numbers">5</button></td>
+        <td><button class = "numbers">6</button></td>
+        <td><button class = "operations">-</button></td>
     </tr>
     <tr>
-        <td><input type="button" value="1" onClick="document.calculator.ans.value+='1'"></td>
-       <td><input type="button" value="2" onClick="document.calculator.ans.value+='2'"></td>
-        <td><input type="button" value="3" onClick="document.calculator.ans.value+='3'"></td>
-        <td><input type="button" value="+" onClick="document.calculator.ans.value+='+'"></td>
+        <td><button class = "numbers">1</button></td>
+        <td><button class = "numbers">2</button></td>
+        <td><button class = "numbers">3</button></td>
+        <td><button class = "operations">+</button></td>
     </tr>
     <tr>
-        <td><input type="button" value="<-" onClick="document.calculator.ans.value+='<-'"></td>
-        <td><input type="button" value="0" onClick="document.calculator.ans.value+='0'"></td>
-        <td><input type="button" value="," onClick="document.calculator.ans.value+=','"></td>
-        <td><input type="button" value="=" onClick="document.calculator.ans.value+='='"></td>
+        <td><button class = "operations"><-</button></td>
+        <td><button class = "numbers">0</button></td>
+        <td><button class = "numbers">,</button></td>
+        <td><button class = "operations">=</button></td>
     </tr>
 </table>
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
