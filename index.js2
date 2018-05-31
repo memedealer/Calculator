@@ -1,33 +1,42 @@
-var button1 = document.getElementById("button-1");
-var button2 = document.getElementById("button-2");
-var button3 = document.getElementById("button-3");
-var button4 = document.getElementById("button-4");
-var button5 = document.getElementById("button-5");
-var button6 = document.getElementById("button-6");
-var button7 = document.getElementById("button-7");
-var button8 = document.getElementById("button-8");
-var heading = document.getElementById("heading");
-changecolor = function (color) {
-    return function (event) {
-        heading.style.color = color;
+var numb = document.getElementsByClassName("numbers");
+console.log(numb);
+var oper = document.getElementsByClassName("operations");
+console.log(oper);
+var input = document.getElementById("field");
+var ii = false;
+var plus2;
+var a = 0;
 
+numbclick = function (event) {
+    if (ii) {
+        input.value = input.value + event.target.textContent;
+    } else {
+        input.value = event.target.textContent;
+        ii = true;
     }
 };
-button1.onclick = changecolor("red");
-button2.onclick = changecolor("blue");
-button3.onclick = changecolor("green");
-button4.onclick = changecolor("black");
-increment = function () {
-    return function (event) {
-        var i = parseInt (event.target.innerHTML);
-        event.target.innerHTML = i + 1;
+
+operclick = function (event) {
+    if (plus2) {
+
+        input.value =parseInt (input.value) + a;
+        a = parseInt(input.value);
+    } else {
+        a = parseInt (input.value);
+        plus2 = true
     }
+    ii = false
+
 };
-buttons = document.getElementsByClassName("increment-button");
-for (var i = 0;
-     i < buttons.length; i++) {
-    var button = buttons [i];
-    button.addEventListener("click", increment());
+console.log(oper, numb);
+console.log(oper.length, numb.length);
+for (var b = 0; b < oper.length; b++){
+    console.log(oper[b]);
+    oper[b].addEventListener("click", operclick)
 }
 
-button1.addEventListener("click", changecolor("red"));
+for (var i = 0; i < numb.length; i++) {
+    console.log(numb[i]);
+    numb[i].addEventListener("click", numbclick);
+
+}
